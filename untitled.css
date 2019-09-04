@@ -184,7 +184,6 @@ i.icon {
   display: inline-block;
   position: relative;
   padding: 10px 10px;
-  z-index: 0;
   transition: opacity 0.1s linear;
 }
 
@@ -244,7 +243,6 @@ i.icon.star:before {
 .timeline {
   position: relative;
   background-color: #f5faff;
-  z-index: -1;
 }
 
 .timeline:after {
@@ -298,7 +296,6 @@ i.icon.star:before {
   /*position it*/
   top: 16px;
   right: -20px; /*adjust with radius - think!*/
-  z-index: 1;
 }
 
 .timeline-container-right {
@@ -331,7 +328,6 @@ i.icon.star:before {
   /*position it*/
   top: 16px;
   left: -20px; /*adjust with radius - think!*/
-  z-index: 1;
 }
 
 .grid-auto-fit {
