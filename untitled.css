@@ -166,6 +166,7 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   background-color: #f5faff;
+  overflow: none;
 }
 
 .section-hr {
