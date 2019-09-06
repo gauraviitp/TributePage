@@ -328,7 +328,7 @@ i.icon.star:before {
 .grid-auto-fit {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   background-color: #f5faff;
@@ -340,12 +340,14 @@ i.icon.star:before {
   border-radius: 2px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); 
   padding: 10px 10px 10px 10px;
+  /*Added for IE support for grid*/
+  max-width: 300px;
 }
 
 .footer-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(min-content, 1fr))[3];
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   padding: 0 20px 50px 20px;
@@ -356,6 +358,8 @@ i.icon.star:before {
 .footer-grid-item {
   width: 80%;
   text-align: justify;
+  /*Added for IE support for grid*/
+  max-width: 200px;
 }
 
 @media (max-width: 700px){
