@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "glyphicons-halflings-regular";
-  src: url("./glyphicons-halflings-regular.woff2") format("woff2"),
-       url("./glyphicons-halflings-regular.woff") format("woff");
-}
-
 * {
     box-sizing: border-box;
 }
@@ -195,14 +189,14 @@ i.icon:hover {
 }
 
 i.icon:before {
-  font-family: "glyphicons-halflings-regular";
+  /*font-family: "glyphicons-halflings-regular";*/
   font-size: 40px;
   font-style: normal;
   font-weight: bolder;
 }
 
 i.icon.read:before {
-  content: "\e103";
+  content: "\1F4D6";
   color: green;
 }
 
@@ -211,7 +205,7 @@ i.icon.read:before {
 }
 
 i.icon.play:before {
-  content: "\e029";
+  content: "\25B6";
   color: red;
 }
 
@@ -220,7 +214,7 @@ i.icon.play:before {
 }
 
 i.icon.biography:before {
-  content: "\e043";
+  content: "\1F4D5";
   color: orange;
 }
 
@@ -237,7 +231,7 @@ i.icon.star:hover {
 }
 
 i.icon.star:before {
-  content: "\e200";
+  content: /*"\00A7"*/ "\2B50";
   color: gray;
 }
 
@@ -332,7 +326,9 @@ i.icon.star:before {
 }
 
 .grid-auto-fit {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   background-color: #f5faff;
@@ -347,7 +343,9 @@ i.icon.star:before {
 }
 
 .footer-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   padding: 0 20px 50px 20px;
