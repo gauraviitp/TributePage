@@ -80,7 +80,7 @@ a:hover {
 }
 
 .about-section {
-  padding: 70px 50px 20px 50px;
+  padding: 70px 20px 20px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -252,7 +252,7 @@ i.icon.star:before {
 }
 
 .timeline-content {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 10px 20px 10px;
   border-style: solid;
   border-color: #d4d4d4;
   border-radius: 2px;
@@ -264,7 +264,7 @@ i.icon.star:before {
 .timeline-container-left {
   position: relative;
   width: 50%;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px 10px 20px;
 }
 
 /*Places the triange alongside the content*/
@@ -296,7 +296,7 @@ i.icon.star:before {
 .timeline-container-right {
   position: relative;
   width: 50%;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 20px 10px 40px;
   /*position it*/
   left: 50%;
 }
@@ -341,7 +341,7 @@ i.icon.star:before {
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); 
   padding: 10px 10px 10px 10px;
   /*Added for IE support for grid*/
-  max-width: 300px;
+  /*max-width: 300px;*/
 }
 
 .footer-grid {
@@ -359,7 +359,7 @@ i.icon.star:before {
   width: 80%;
   text-align: justify;
   /*Added for IE support for grid*/
-  max-width: 200px;
+  /*max-width: 200px;*/
 }
 
 @media (max-width: 700px){
@@ -383,6 +383,7 @@ i.icon.star:before {
     display: block;
     left: 30px;
     width: 90%;
+    padding: 10px 10px 10px 40px;
   }
 
   .timeline-container-right:after {
@@ -393,6 +394,7 @@ i.icon.star:before {
   .timeline-container-left {
     left: 30px;
     width: 90%;
+    padding: 10px 10px 10px 40px;
   }
 
   .timeline-container-left:before {
